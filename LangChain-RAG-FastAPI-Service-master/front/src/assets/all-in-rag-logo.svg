@@ -1,0 +1,22 @@
+<svg width="620" height="360" viewBox="0 0 620 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="620" height="360" fill="#ffffff"/>
+  <g transform="translate(36 35)">
+    <path d="M100 72V42" stroke="#2F56A6" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="100" cy="28" r="22" fill="#FFCC45" stroke="#2F56A6" stroke-width="11"/>
+    <rect x="30" y="82" width="140" height="108" rx="42" fill="#FDFEFF" stroke="#2F56A6" stroke-width="12"/>
+    <rect x="10" y="118" width="26" height="68" rx="13" fill="#5C8BE8" stroke="#2F56A6" stroke-width="10"/>
+    <rect x="164" y="118" width="26" height="68" rx="13" fill="#5C8BE8" stroke="#2F56A6" stroke-width="10"/>
+    <circle cx="66" cy="140" r="18" fill="#FFCC45"/>
+    <circle cx="134" cy="140" r="18" fill="#FFCC45"/>
+    <path d="M100 149L110 169H90L100 149Z" fill="#FFCC45"/>
+    <path d="M31 185C-3 205 -2 261 34 267H46V200L31 185Z" fill="#5482E6" stroke="#2F56A6" stroke-width="11"/>
+    <path d="M169 185C203 205 202 261 166 267H154V200L169 185Z" fill="#5482E6" stroke="#2F56A6" stroke-width="11"/>
+    <rect x="45" y="176" width="110" height="96" rx="26" fill="#FDFEFF" stroke="#2F56A6" stroke-width="12"/>
+    <path d="M76 247V194H111C124 194 134 204 134 217C134 230 124 240 111 240H94V247H76ZM94 226H109C115 226 119 222 119 217C119 211 115 207 109 207H94V226Z" fill="#2F56A6"/>
+    <path d="M111 240L134 248" stroke="#FFCC45" stroke-width="13" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(250 70)">
+    <text x="0" y="80" fill="#2F56A6" font-family="Arial Black, Impact, Microsoft YaHei, sans-serif" font-size="82" font-weight="900">All in</text>
+    <text x="0" y="205" fill="#FFCC45" font-family="Arial Black, Impact, Microsoft YaHei, sans-serif" font-size="110" font-weight="900">RAG</text>
+  </g>
+</svg>

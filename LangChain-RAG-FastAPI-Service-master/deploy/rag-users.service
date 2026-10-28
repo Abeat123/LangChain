@@ -1,0 +1,22 @@
+[Unit]
+Description=RAG Django user service
+After=network-online.target redis-server.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ragapp
+Group=ragapp
+WorkingDirectory=/opt/rag-service/app/DjangoUserService
+Environment=PYTHONUTF8=1
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/opt/rag-service/.venv/bin/gunicorn DjangoUserService.wsgi:application --bind 127.0.0.1:8001 --workers 1 --threads 2 --timeout 90 --access-logfile - --error-logfile - --no-control-socket
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

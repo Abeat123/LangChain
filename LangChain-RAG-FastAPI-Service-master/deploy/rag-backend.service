@@ -1,0 +1,26 @@
+[Unit]
+Description=RAG FastAPI service
+After=network-online.target redis-server.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ragapp
+Group=ragapp
+WorkingDirectory=/opt/rag-service/app/backend
+Environment=PYTHONUTF8=1
+Environment=PYTHONUNBUFFERED=1
+Environment=OMP_NUM_THREADS=1
+Environment=OPENBLAS_NUM_THREADS=1
+Environment=TOKENIZERS_PARALLELISM=false
+Environment=ANONYMIZED_TELEMETRY=false
+ExecStart=/opt/rag-service/.venv/bin/python -m uvicorn main:app --host 127.0.0.1 --port 8000 --workers 1 --proxy-headers --forwarded-allow-ips 127.0.0.1
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
