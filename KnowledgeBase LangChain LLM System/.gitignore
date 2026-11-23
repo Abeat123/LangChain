@@ -1,0 +1,7 @@
+/.idea/
+/chat_history/
+/chroma_db/
+/md5_text
+/.env
+/.env.*
+!/.env.example
